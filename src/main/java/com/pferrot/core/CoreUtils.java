@@ -11,24 +11,22 @@ public class CoreUtils {
 	/**
 	 * Throws an AssertionError if the String parameter is null or empty.
 	 * 
-	 * @param pParamValue
-	 * @param pParamName
+	 * @param pString
 	 */
-	public static void assertNotEmptyStringParameter(final String pParamValue, final String pParamName) {
-		if (pParamValue == null || pParamValue.trim().length() == 0) {
-			throw new AssertionError("Parameter is not a valid non-empty string: " + pParamName);
+	public static void assertNotNullOrEmptyString(final String pString) {
+		if (pString == null || pString.trim().length() == 0) {
+			throw new AssertionError("Not a valid non-empty string.");
 		}
 	}
 	
 	/**
 	 * Throws an AssertionError if the parameter is null.
 	 * 
-	 * @param pParamValue
-	 * @param pParamName
+	 * @param pObject
 	 */
-	public static void assertNotNullParameter(final Object pParamValue, final String pParamName) {
-		if (pParamValue == null) {
-			throw new AssertionError("Parameter must not be null: " + pParamName);
+	public static void assertNotNull(final Object pObject) {
+		if (pObject == null) {
+			throw new AssertionError("Null value not allowed.");
 		}
 	}
 }
