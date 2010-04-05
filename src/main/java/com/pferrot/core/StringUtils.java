@@ -12,11 +12,11 @@ public class StringUtils {
 		return s == null;		
 	}
 
-	public static boolean isNullOrEmptyString(final String s) {
+	public static boolean isNullOrEmpty(final String s) {
 		return s == null || s.trim().length() == 0;
 	}
 
-	public static boolean isNullOrEmptyStringWithoutTrim(final String s) {
+	public static boolean isNullOrEmptyWithoutTrim(final String s) {
 		return s == null || s.length() == 0;
 	}
 }
