@@ -7,10 +7,24 @@
 	<name>core</name>
 	<url>http://maven.apache.org</url>
 	<scm>
-		<connection>scm:svn:svn://patrice-ws/svn/my-project</connection>
+		<connection>scm:svn:svn://patrice-ws/svn/core/trunk</connection>
 		<developerConnection>scm:svn:svn://patrice-ws/core/trunk</developerConnection>
 		<url>http://patrice-ws/websvn/core/trunk</url>
 	</scm>
+	<distributionManagement>
+		<repository>
+	      <id>releases-repo</id>
+	      <name>releases-repo</name>
+	      <url>file://C:/dev/repositories/releases</url>
+	      <layout>default</layout>
+	    </repository>
+	    <snapshotRepository>
+	      <id>snapshots-repo</id>
+	      <name>snapshots-repo</name>
+	      <url>file://C:/dev/repositories/snapshots</url>
+	      <layout>default</layout>
+	    </snapshotRepository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
