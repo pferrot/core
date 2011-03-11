@@ -29,4 +29,26 @@ public class CoreUtils {
 			throw new AssertionError("Null value not allowed.");
 		}
 	}
+
+	/**
+	 * Throws an AssersionError if the parameter is not true.
+	 *
+	 * @param pBoolean
+	 */
+	public static void assertTrue(final boolean pBoolean) {
+		if (!pBoolean) {
+			throw new AssertionError("Value should be true.");
+		}
+	}
+
+	/**
+	 * Throws an AssersionError if the parameter is not true.
+	 *
+	 * @param pBoolean
+	 */
+	public static void assertTrue(final Boolean pBoolean) {
+		if (! Boolean.TRUE.equals(pBoolean)) {
+			throw new AssertionError("Value should be true.");
+		}
+	}
 }
