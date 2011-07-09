@@ -3,13 +3,13 @@
 	<groupId>com.pferrot</groupId>
 	<artifactId>core</artifactId>
 	<packaging>jar</packaging>
-	<version>0.3</version>
+	<version>0.4-SNAPSHOT</version>
 	<name>core</name>
 	<url>http://maven.apache.org</url>
 	<scm>
-		<connection>scm:svn:svn://patrice-ws/svn/core/tags/core-0.3</connection>
-		<developerConnection>scm:svn:svn://patrice-ws/core/tags/core-0.3</developerConnection>
-		<url>http://patrice-ws/websvn/core/tags/core-0.3</url>
+		<connection>scm:svn:svn://patrice-ws/svn/core/trunk</connection>
+		<developerConnection>scm:svn:svn://patrice-ws/core/trunk</developerConnection>
+		<url>http://patrice-ws/websvn/core/trunk</url>
 	</scm>
 	<distributionManagement>
 		<repository>
